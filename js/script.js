@@ -1,8 +1,8 @@
 $(document).ready(function(){
     $(".col-3").click(function(){
-        window.location.href="reciept.html"
+        window.location.href="form.html"
     });
     $(".col-4").click(function(){
-        window.location.href="about.html"
+        window.location.href="form.html"
     });
 });
