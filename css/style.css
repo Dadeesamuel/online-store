@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(136, 164, 241);
+}
+.sam{
+    color: red;
+    font-size: large;
+}
+.store{
+    border: 2px ridge wheat;
+    border-radius: 50%;
+    color: brown;
+    background-color: yellow;
+    padding: 10px;
+}
+.container{
+    margin: 20px;
+}
+.link{
+    text-align: center;
+}
+p{
+    font-size: x-large;
+    color: khaki;
+}
+.col-3, .col-4{
+    cursor: pointer;
+}
