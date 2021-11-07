@@ -9,7 +9,7 @@ nav{
     padding: 20px;
 }
 .sam{
-    color: red;
+    color: rgb(12, 10, 10);
     font-size: large;
 }
 .store{
@@ -131,4 +131,7 @@ padding-top: 15px;
 }
 .dropdown-content a{
     display: block;
+}
+.dropdown-content a:hover{
+    background-color: yellowgreen;
 }
