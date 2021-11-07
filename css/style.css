@@ -30,20 +30,20 @@ a:hover{
     color: white;
 }
 
-p{
-    font-size: x-large;
-    color: khaki;
-}
+
+
 .col-3, .col-4{
     cursor: pointer;
 }
- /*.col-4{
+ #different{
     width: 100%;
     background-repeat: no-repeat;
 background-size: 100%;
 height: 220px;
-
-}*/
+color: brown;
+padding-left: 100px;
+padding-top: 20px;
+}
 
 .form{
     width: 50%;
@@ -99,4 +99,16 @@ height: 220px;
     background-repeat: no-repeat;
     width: 50%;
     height: 650px;
+}
+#btn{
+  
+    text-align: center;
+}
+.btn:hover{
+  background-color: red;
+}
+footer{
+    background-color: saddlebrown;
+padding-top: 15px;
+    height: 50px;text-align: center;
 }
