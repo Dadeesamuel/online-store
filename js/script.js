@@ -19,4 +19,8 @@ $(document).ready(function(){
     $(".btn").click(function(){
         window.location.href="form.html"
     });
+    $(".dropbtn").click(function(){
+    $(".dropdown-content").toggle();
+    });
+
 });
