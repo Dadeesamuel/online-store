@@ -10,7 +10,7 @@
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/script.js"></script>
-  
+  <link href="index.html">
 
 </head>
 <body>
@@ -61,7 +61,7 @@
   </div>
   <!--End Invoice Mid-->
 
-  <div id="bot">
+  <div onsubmit="return userDetails()" id="bot">
 
     <div id="table">
       <table>
@@ -79,13 +79,13 @@
 
         <tr class="service">
           <td class="tableitem">
-            <p class="itemtext"></p>
+            <p id="sub"> </p>
           </td>
           <td class="tableitem">
-            <p class="itemtext"></p>
+            <p class="e"> </p>
           </td>
           <td class="tableitem">
-            <p class="itemtext"></p>
+            <p class="t"> </p>
           </td>
         </tr>
 

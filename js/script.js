@@ -1,18 +1,37 @@
 //business logic
+const firstName = $("#firstname").val();
+const middleName = $("#middlename").val();
+const lastName = $("#lastname").val();
+const email = $("#email").val();
+const phonenumber = $("#phonenumber").val();
+const wear = $("#wear").val();
+const cash = $("input:radio[name=gender]:checked").val();
+const payment = $("input:radio[name=payment]:checked").val();
+
 $(document).ready(function() {
-    $(".form-one").submit(function(event) {
-      $(".btn").click()
-      const lastName = $("#lastname").val().toUpperCase();
-      const firstName = $("#firstname").val().toUpperCase();
-      const otherName = $("#othername").val().toUpperCase();
-let fullName = (`${lastName} ${firstName} ${otherName}`);
+    $(".data").submit(function userDetails() {
+    
+        const firstName = $("#firstname").val();
+        const middleName = $("#middlename").val();
+        const lastName = $("#lastname").val();
+        const email = $("#email").val();
+        const phonenumber = $("#phonenumber").val();
+        const wear = $("#wear").val();
+        const cash = $("input:radio[name=gender]:checked").val();
+        const payment = $("input:radio[name=payment]:checked").val();
+      
 
-     $(".fullname").text(fullName);
- 
-  
-      $("#story").toggle();
+let fullName = (`${firstName} ${middleName} ${lastName} ${cash} ${payment} ${email} ${phonenumber} ${wear}`);
+//event.preventDefault();
 
-      event.preventDefault();
+     $("#sub").text(fullName);
+     $(".m").text(wear);
+     $(".e").text(firstName);
+     $(".t").text(payment);
+
+
+
+      
     });
   });
 

@@ -39,55 +39,67 @@
     
 <div style=" color: black; border: 3px solid grey;" class="form">
     <h2 style="text-align: center;color: rgb(24, 13, 13); background-color: brown; width: 100%; margin: auto;"><strong><em> kindly fill in the form to shop </strong></em></h2>
-    <form autocomplete="on">
+
+    <form action="reciept.html" onsubmit="return userDetails()" class="data">
+
     <fieldset>
         <legend><strong>Personal Profile</strong> </legend>
         <label for="firstname"><strong>Firstname: </strong></label>
-        <input type="text" name="Firstname" id="firstname" placeholder="Write your Firstname" value="" autofocus required><br>
+        <input type="text" name="Firstname" id="firstname" placeholder="Write your Firstname"  required><br>
         <label for="middlename"><strong>Middle Name:</strong></label>
-        <input type="text" name="middlename" id="middlename" placeholder="Write your Middle name" value="" autofocus required><br>
+        <input type="text" name="middlename" id="middlename" placeholder="Write your Middle name"  required><br>
         <label for="Lastname"><strong>Lastname:</strong></label>
-        <input type="text" name="Lastname" id="Lastname" placeholder="Write your Lastname" value="" required><br>
+        <input type="text" name="lastname" id="lastname" placeholder="Write your Lastname"  required><br>
         <label for="Email"><strong>Email:</strong></label>
-        <input type="email" name="Email" id="Email" placeholder="Write your Email" value=""> <br>
+        <input type="email" name="Email" id="email" placeholder="Write your Email"  required> <br>
         <label for="Phonenumber"><strong>Phonenumber:</strong></label>
-        <input type="number" name="Phonenumber" id="Phonenumber" placeholder="Phone number" value="">
+        <input type="number" name="Phonenumber" id="phonenumber" placeholder="Phone number"  required>
     </fieldset><br><hr>
+
 <div class="row">
     <fieldset class="col-6">
-            <legend>Gender</legend> 
-        <input type="radio" name="Gender">
-        <label for="Male">Male</label><br>
-        <input type="radio" name="Gender">
-        <label for="Female">Female</label><br>
+        <legend>Gender</legend> 
+
+        <label for="Male">Male</label>
+        <input type="radio" name="gender" value="male" checked><br>
+        
+        <label for="Female">Female</label>
+        <input type="radio" name="gender" value="female"><br>
+      
+
     </fieldset><br>
 
     <fieldset class="col-6">
         <legend>Payment Method</legend> 
-    <input type="radio" name="payment">
-    <label for="Cash">Cash</label><br>
-    <input type="radio" name="payment">
-    <label for="Female">Transfer</label><br>
+
+        <label for="Cash">Cash</label>
+    <input type="radio" name="payment" value="cash" checked><br>
+    
+    <label for="Transfer">Transfer</label>
+    <input type="radio" name="payment" value="transfer"><br>
+    
 </fieldset>
-</div><hr>
+</div>
+<hr>
     <fieldset>
       
        
-        <label for="age"><h3>select item</h3></label>
-        <select name="car" id="car" >
+        <label for="wear"><h3>select item</h3></label>
+        <select name="wear" id="wear" >
             <option value=""></option>
-            <option value="night gown" id="nightgown">night gown</option>
+            <option value="night gown">night gown</option>
             <option value="trousers">trousers</option>
             <option value="shirt">shirt</option>
             <option value="knicker">knicker</option> <br>
             <option value="sweater"> sweater</option>
             <option value="hoodies">hoodies</option>
-            <option value="skirt">Skirts</option>
+            <option value="skirts">Skirts</option>
             <option value="bum short">bum short</option> </select>
             
     </fieldset>
-<div class="text-center" id="sub">
     <input type="submit" value="Submit">
+<div class="text-center" id="sub">
+    
 </div>
 </div>
 
