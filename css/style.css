@@ -144,7 +144,7 @@ padding-top: 15px;
     box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5);
     padding: 5mm;
     margin: 0 auto;
-    width: 50%;
+    width: 70%;
     background: #fff;
 }
     ::selection {
@@ -160,7 +160,8 @@ padding-top: 15px;
       color: #222;
     }
     h2 {
-      font-size: xx-large
+      font-size: large;
+      max-width: 600px;
     }
     h3 {
       font-size: x-large;
@@ -190,22 +191,6 @@ padding-top: 15px;
       min-height: 50px;
     }
   
-    #top .logo {
-      /*float: left; */
-      height: 60px;
-      width: 60px;
-    float: left;
-    padding-top: 10px;
-      background-size: 60px 60px;
-    }
-    .clientlogo {
-      float: left;
-      height: 60px;
-      width: 60px;
-      background: url(http://michaeltruong.ca/images/client.jpg) no-repeat;
-      background-size: 60px 60px;
-      border-radius: 50px;
-    }
     .info {
       display: block;
       /*float:left; */
@@ -244,3 +229,43 @@ padding-top: 15px;
       margin-top: 5mm;
     }
   
+/* background selection*/
+.green-background {
+  background-color: green;
+}
+
+.yellow-background {
+  background-color: yellow;
+}
+
+.red-background {
+  background-color: red;
+}
+.blue-background {
+  background-color:blue;
+}
+.black-background {
+  background-color:black;
+  
+}
+.container{
+  display: none;
+  max-width: 50%;
+  border: 3px solid grey;
+  width: 15%;
+ background-color: white;
+ float: right;
+margin-top: 20%;
+margin-right: 20px;
+
+}
+.icon{
+
+float: right;
+margin-top: 28%;
+margin-right: 10px;
+font-size: 50px;
+cursor: pointer;
+
+}
+

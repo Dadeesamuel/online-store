@@ -9,7 +9,7 @@ const cash = $("input:radio[name=gender]:checked").val();
 const payment = $("input:radio[name=payment]:checked").val();
 
 $(document).ready(function() {
-    $(".data").submit(function userDetails() {
+    $(".data").submit(function userDetails(event) {
     
         const firstName = $("#firstname").val();
         const middleName = $("#middlename").val();
@@ -28,8 +28,6 @@ let fullName = (`${firstName} ${middleName} ${lastName} ${cash} ${payment} ${ema
      $(".m").text(wear);
      $(".e").text(firstName);
      $(".t").text(payment);
-
-
 
       
     });
@@ -66,4 +64,47 @@ $(document).ready(function(){
     $("#sub").click(function(){
         window.location.href="reciept.html"
     });
+
+    $("#add").click(function(){
+        window.location.href="reciept.html" 
+       $("#u").val();
+        })
 });
+
+// add and remove class
+$(document).ready(function() {
+
+
+
+    $("button#green").click(function() {
+      $("body").removeClass();
+      $("body").addClass("green-background");
+    });
+  
+    $("button#yellow").click(function() {
+      $("body").removeClass();
+      $("body").addClass("yellow-background");
+    });
+  
+    $("button#red").click(function() {
+      $("body").removeClass();
+      $("body").addClass("red-background");
+    });
+
+    $("button#blue").click(function() {
+        $("body").removeClass();
+        $("body").addClass("blue-background");
+      });
+
+      $("button#black").click(function() {
+        $("body").removeClass();
+        $("body").addClass("black-background");
+      });
+      $(".icon").click(function() {
+       // $(".container").toggle();
+        //$(".container").slideToggle("slow");
+      $(".container").toggle("slide");
+      
+    });
+      });
+ 

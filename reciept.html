@@ -38,7 +38,7 @@
 
 <!-- pos receipt -->
 
-<div id="invoice-POS">
+<div id="invoice-POS" class="container">
   <div class="logo">  <h1 class="sam ">sammy<span class="store">store</span></div>
   <center id="top">
   
@@ -63,17 +63,42 @@
 
   <div onsubmit="return userDetails()" id="bot">
 
-    <div id="table">
+    <div id="table" style="width: 100%;" class="container">
       <table>
         <tr class="tabletitle">
+          <td class="Rate">
+            <h2>S/N</h2>
+          </td>
           <td class="item">
-            <h2>Item</h2>
+            <h2>Products</h2>
           </td>
           <td class="Hours">
-            <h2>name</h2>
+            <h2>Quantity</h2>
           </td>
           <td class="Rate">
-            <h2>Sub Total</h2>
+            <h2>UNIT PRICE</h2>
+          </td>
+          <td class="Rate">
+            <h2>TOTAL</h2>
+          </td>
+          
+        </tr>
+
+        <tr class="service">
+          <td class="tableitem">
+            <p id="m"> </p>
+          </td>
+          <td class="tableitem">
+            <p id="e"> </p>
+          </td>
+          <td class="tableitem">
+            <p id="t"> </p>
+          </td>
+          <td class="tableitem">
+            <p class="u"> </p>
+          </td>
+          <td class="tableitem">
+            <p class="s"> </p>
           </td>
         </tr>
 
@@ -82,14 +107,8 @@
             <p id="sub"> </p>
           </td>
           <td class="tableitem">
-            <p class="e"> </p>
+            <p id="sub"> </p>
           </td>
-          <td class="tableitem">
-            <p class="t"> </p>
-          </td>
-        </tr>
-
-        <tr class="service">
           <td class="tableitem">
             <p class="itemtext"></p>
           </td>
@@ -103,17 +122,11 @@
 
         <tr class="service">
           <td class="tableitem">
-            <p class="itemtext"></p>
+            <p id="sub"> </p>
           </td>
           <td class="tableitem">
-            <p class="itemtext"></p>
+            <p id="sub"> </p>
           </td>
-          <td class="tableitem">
-            <p class="itemtext"></p>
-          </td>
-        </tr>
-
-        <tr class="service">
           <td class="tableitem">
             <p class="itemtext"></p>
           </td>
@@ -126,6 +139,30 @@
         </tr>
 
         <tr class="service">
+          <td class="tableitem">
+            <p id="sub"> </p>
+          </td>
+          <td class="tableitem">
+            <p id="sub"> </p>
+          </td>
+          <td class="tableitem">
+            <p class="itemtext"></p>
+          </td>
+          <td class="tableitem">
+            <p class="itemtext"></p>
+          </td>
+          <td class="tableitem">
+            <p class="itemtext"></p>
+          </td>
+        </tr>
+
+        <tr class="service">
+          <td class="tableitem">
+            <p id="sub"> </p>
+          </td>
+          <td class="tableitem">
+            <p id="sub"> </p>
+          </td>
           <td class="tableitem">
             <p class="itemtext"></p>
           </td>
